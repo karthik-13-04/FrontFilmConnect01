@@ -1,0 +1,706 @@
+/* General Reset and Typography */
+/* In index.css or App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/* The rest of your global CSS goes below */
+* {
+    margin: 0;
+    padding: 0;
+     
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #0CCC5B
+;
+    /* line-height: 1.6; */
+    min-height: 100dvh;
+}
+
+.container {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px ;
+    background-color: #000000;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0CCC5B;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Header Styles */
+.main-header {
+    background-image: url(../public/images/image.png);
+    /* background-color: #000000; */
+    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+/* In your component's CSS file */
+
+.logo {
+    /* Base Styles */
+    font-size: 26px;
+    font-weight: 700;
+    
+    /* Apply the font family and the Regal Gold color */
+    font-family: 'Dancing Script', cursive;
+    color: #0CCC5B; 
+    
+    /* Optional: for a nice effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 1px solid #0CCC5B;
+    color: #0CCC5B;
+}
+
+.btn-login:hover {
+    background-color: #ecf0f1;
+}
+
+.btn-signup {
+    background-color: #0CCC5B;
+    color: white;
+}
+
+.btn-signup:hover {
+    background-color: #438a61;
+}
+
+/* --- 1. HERO SECTION --- */
+.hero-wrapper {
+    /* Replace YOUR_HERO_BACKGROUND_IMAGE_URL with your image URL */
+    background-image: url(../public/images/image.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #ecf0f1;
+    padding: 80px 0 0;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 80px;
+    margin: 40px;
+    max-height: 800px
+    ;
+}
+
+.hero-text-content {
+    max-width: 50%;
+    padding-top: 40px;
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* In your component's CSS file */
+
+.hero-title span {
+    /* Base color from your request */
+    color: #0CCC5B; 
+    
+    /* Apply the font family */
+    font-family: 'Libre Baskerville', serif;
+    
+    /* Specify the Bold weight */
+    font-weight: 700; 
+    
+    /* Specify the Italic style */
+    font-style: italic; 
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.store-btn.cta-btn {
+     background-color: white;
+     color: #2c3e50;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.store-btn:hover {
+    background-color: #34495e;
+}
+
+.store-btn.cta-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.store-btn i {
+    font-size: 20px;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.store-text .small-text {
+    font-size: 10px;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+.store-text .large-text {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.hero-image-mockup {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.phone-mockup {
+    width: 350px;
+    height: 600px;
+    
+    /* border: 10px solid #2c3e50; */
+    border-radius: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(5deg);
+}
+
+.mockup-inner-content {
+    background-image: url('../public/images/download\ \(13\).jpeg');
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+
+/* --- 2. FEATURES SECTION --- */
+.feature-cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 10px;
+    
+}
+
+/* --- 3. INDUSTRIES SECTION (MODIFIED FOR WRAPPING) --- */
+.industries-section {
+    background-color: black;
+    padding: 60px 0;
+}
+
+.industries-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.industries-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.industry-pill {
+    background-color: #07612B;
+    padding: 15px 25px;
+    border-radius: 30px;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.industry-pill:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.industry-name {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.industry-details {
+    font-size: 13px;
+    color: #9dabac;
+    margin-top: 4px;
+}
+
+/* --- 4. ROLES & CTA SECTION (Combined Layout) --- */
+.roles-cta-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.roles-container {
+    flex: 2;
+}
+
+.roles-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0CCC5B;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.role-item {
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    cursor: pointer;
+    
+}
+
+.role-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.role-icon {
+    color: #0CCC5B;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.role-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Step Cards (Span across all columns) */
+.step-item {
+    grid-column: span 3;
+    background-color: #07612B;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(52, 219, 80, 0.4);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-icon {
+    font-size: 30px;
+    color: #f7f9fc;
+}
+
+.step-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.step-description {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CTA Container */
+.cta-container {
+    flex: 1;
+    background-color: #687072;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 110px;
+
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle {
+    color: #bdc3c7;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.cta-mockup {
+    width: 100%;
+    height: 250px;
+    background-image: url(../public/images/download\ \(5\).jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 14px;
+    border: 5px solid #bdc3c7;
+}
+
+/* --- 5. FOOTER --- */
+.footer {
+    /* Replace YOUR_FOOTER_BACKGROUND_IMAGE_URL with your image URL */
+    /* background-image: url('../public/images/image.png'); */
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a;
+    color: #0CCC5B;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px;
+    flex-wrap: wrap;
+    
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-column {
+    min-width: 120px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #0CCC5B;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #67aa83;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon i {
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.social-icon:hover i {
+    color: #0CCC5B;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* 👇 RESPONSIVE DESIGN FOR TABLET (max-width: 1024px) 👇 */
+@media (max-width: 1024px) {
+    /* Hero: Tablet takes full width for text content */
+    .hero-text-content {
+        max-width: 100%;
+    }
+    .hero-image-mockup {
+        display: none;
+    }
+    .hero-section {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .store-buttons {
+        justify-content: center;
+        
+    }
+    .roles-cta-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .roles-container {
+        flex: auto;
+        width: 100%;
+    }
+    .roles-title {
+        text-align: center;
+    }
+
+    /* Golden Ratio Split for Roles Grid: 2 columns */
+    .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .step-item {
+        grid-column: span 2;
+        text-align: left;
+        flex-direction: row;
+    }
+
+    /* CTA Container: Move up and take full width */
+    .cta-container {
+        flex: auto;
+        width: 100%;
+        margin-top: 0;
+        padding: 40px;
+    }
+    .cta-mockup{
+        height: 400px;
+    }
+    /* Footer: Stack content and center links */
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* 👇 RESPONSIVE DESIGN FOR MOBILE (max-width: 600px) 👇 */
+@media (max-width: 600px) {
+    /* Header: Tighten padding */
+    .main-header {
+        padding: 10px 0;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Hero: Font size reduction and button stacking */
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .store-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .store-btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Features: Stack vertically for clarity */
+    .feature-cards-grid {
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+    }
+    .feature-card {
+        max-width: 100%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    /* --- INDUSTRIES MOBILE FIX (Horizontal Scroll) --- */
+    .industries-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .industries-scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* Hide scrollbar for a cleaner look */
+    .industries-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    .industries-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .industry-pill {
+        min-width: 150px;
+        max-width: 130px;
+        flex-shrink: 0;
+        padding: 10px 15px;
+
+    }
+    /* --- END INDUSTRIES MOBILE FIX --- */
+
+    /* Roles: Single column grid for max readability */
+    .roles-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .step-item {
+        grid-column: span 1;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* CTA: Tighter padding */
+    .cta-container {
+        padding: 30px;
+    }
+    .step-item {
+        text-align: center;
+       
+    }
+    .role-icon {
+        font-size: 24px;
+        padding: 0 -100px 0 -100px;
+    }
+
+    /* Footer: Center align columns */
+    .footer-column {
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer-column a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
